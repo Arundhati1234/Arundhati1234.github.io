@@ -1,0 +1,46 @@
+.landing-page{
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-page-text{
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+  color: #fff;
+}
+
+#name{
+  color: #f42069;
+}
+
+a.landing-page-hover
+{
+    position: relative;
+    color: #bada55;
+    text-decoration: none;
+}
+
+
+a.landing-page-hover:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: #bada55;
+}
+
+a.landing-page-hover:hover:before {
+  visibility: visible;
+  width: 100%;
+  text-decoration: none;
+  color: #bada55;
+}
