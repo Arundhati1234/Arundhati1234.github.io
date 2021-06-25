@@ -1,3 +1,5 @@
+
+
 .landing-page{
   height: 100vh;
   background-color: black;
@@ -44,3 +46,93 @@ a.landing-page-hover:hover:before {
   text-decoration: none;
   color: #bada55;
 }
+
+.project-header{
+  display: flex;
+  justify-content: center;
+  font-family: 'Fira Code', monospace;
+  margin: 4% 0%;
+  font-weight: bold;
+}
+
+.project-div{ 
+  display:flex; 
+  justify-content: center;
+  margin-left: 12px;
+  font-family: 'Fira Code', monospace;
+}
+
+.row{
+  display:flex;
+  margin:0;
+}
+
+.column{
+  flex:50%;
+}
+
+.project-title{
+  padding: 2%;
+}
+
+.project-desc{
+  padding: 2%;
+  line-height: 170%;
+}
+
+.video{
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.HomeAuto{
+  flex:1.2;
+}
+
+.DinoGame{
+  flex:1;
+}
+
+.PDFtoADB{
+  background-color: #bada55;
+  flex:1.2;
+}
+
+.Front-end{
+  background-color: #bada55;
+  flex:1;
+}
+
+@media screen and (max-width:1400px){
+
+  .project-title{
+    padding: 0%;
+  }
+
+  .project-desc{
+    padding: 0%;;
+  }
+
+  .DinoGame{
+    background: rgba(186, 218, 85, 0.7);
+  }
+
+  .PDFtoADB{
+    background-color: #fff;
+  }
+
+  .Front-end{
+    background-color: rgba(244, 32, 105, 0.7);
+  }
+  
+  .row{
+    display: block;
+    margin: 0;
+    line-height: 130%;
+  }
+  .project-div{
+    display:block;
+  }
+
+}
+
