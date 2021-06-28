@@ -1,6 +1,6 @@
+/*******************LANDING PAGE******************/
 
-
-.landing-page{
+.landing-page {
   height: 100vh;
   background-color: black;
   display: flex;
@@ -8,23 +8,21 @@
   justify-content: center;
 }
 
-.landing-page-text{
-  font-family: 'Fira Code', monospace;
+.landing-page-text {
+  font-family: "Fira Code", monospace;
   text-align: center;
   color: #fff;
 }
 
-#name{
+#name {
   color: #f42069;
 }
 
-a.landing-page-hover
-{
-    position: relative;
-    color: #bada55;
-    text-decoration: none;
+a.landing-page-hover {
+  position: relative;
+  color: #bada55;
+  text-decoration: none;
 }
-
 
 a.landing-page-hover:before {
   content: "";
@@ -33,7 +31,7 @@ a.landing-page-hover:before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #FFF;
+  background-color: #fff;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
@@ -47,92 +45,146 @@ a.landing-page-hover:hover:before {
   color: #bada55;
 }
 
-.project-header{
+/*******************PROJECTS******************/
+
+.header {
   display: flex;
   justify-content: center;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   margin: 4% 0%;
   font-weight: bold;
 }
 
-.project-div{ 
-  display:flex; 
+.project-div {
+  display: flex;
   justify-content: center;
   margin-left: 12px;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
 }
 
-.row{
-  display:flex;
-  margin:0;
+.row {
+  display: flex;
+  margin: 0;
 }
 
-.column{
-  flex:50%;
+.column {
+  flex: 50%;
 }
 
-.project-title{
+.project-title {
   padding: 2%;
 }
 
-.project-desc{
+.project-desc {
   padding: 2%;
   line-height: 170%;
 }
 
-.video{
+button.icon {
+  border-radius: 100%;
+  margin: 0;
+  border: none;
+  background-color: inherit;
+}
+
+img.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.video {
   margin: 30px;
   border-radius: 10px;
 }
 
-.HomeAuto{
-  flex:1.2;
+.HomeAuto {
+  flex: 1.2;
 }
 
-.DinoGame{
-  flex:1;
+.HomeAuto.project-desc {
+  line-height: 130%;
 }
 
-.PDFtoADB{
+.DinoGame {
+  flex: 1;
+}
+
+.PDFtoADB {
   background-color: #bada55;
-  flex:1.2;
+  flex: 1.2;
 }
 
-.Front-end{
+.Front-end {
   background-color: #bada55;
-  flex:1;
+  flex: 1;
 }
 
-@media screen and (max-width:1400px){
+/*******************SKILLS******************/
 
-  .project-title{
+.skills-row {
+  display: flex;
+  margin-left: 25%;
+  justify-content: center;
+}
+
+.skills-column {
+  flex: 1;
+  margin-left: 12px;
+  font-family: "Fira Code", monospace;
+  line-height: 170%;
+  font-size: 25px;
+}
+
+.h {
+  font-size: 14px;
+  color: #f42069;
+  display: none;
+}
+
+.skill-item:hover + .h {
+  display: block;
+}
+
+/**************MEDIA QUERIES******************/
+
+@media screen and (max-width: 1400px) {
+  .project-title {
     padding: 0%;
   }
 
-  .project-desc{
-    padding: 0%;;
+  .project-desc {
+    padding: 0%;
   }
 
-  .DinoGame{
+  .DinoGame {
     background: rgba(186, 218, 85, 0.7);
   }
 
-  .PDFtoADB{
+  .PDFtoADB {
     background-color: #fff;
   }
 
-  .Front-end{
+  .Front-end {
     background-color: rgba(244, 32, 105, 0.7);
   }
-  
-  .row{
+
+  .row {
     display: block;
     margin: 0;
     line-height: 130%;
   }
-  .project-div{
-    display:block;
+
+  .project-div {
+    display: block;
   }
 
+  .skills-row {
+    margin: 12%;
+  }
 }
 
+@media screen and (max-width: 600px) {
+  .skills-row {
+    display: block;
+  }
+}
