@@ -2,29 +2,41 @@
 
 .landing-page {
   height: 100vh;
-  background-color: black;
+  background-image: url("hills.png");
   display: flex;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .landing-page {
+    background-attachment: scroll;
+  }
 }
 
 .landing-page-text {
   font-family: "Fira Code", monospace;
   text-align: center;
   color: #fff;
+  font-size: 200%;
 }
 
 #name {
   color: #f42069;
 }
 
-a.landing-page-hover {
+.landing-page-hover {
+  text-decoration: none !important;
   position: relative;
   color: #bada55;
-  text-decoration: none;
 }
 
-a.landing-page-hover:before {
+.landing-page-hover:before {
+  text-decoration: none !important;
   content: "";
   position: absolute;
   width: 0;
@@ -38,11 +50,16 @@ a.landing-page-hover:before {
   color: #bada55;
 }
 
-a.landing-page-hover:hover:before {
+.landing-page-hover:hover:before {
+  text-decoration: none !important;
   visibility: visible;
   width: 100%;
   text-decoration: none;
   color: #bada55;
+}
+
+.landing-page-hover:hover {
+  color: #f42069;
 }
 
 /*******************PROJECTS******************/
@@ -73,6 +90,13 @@ a.landing-page-hover:hover:before {
 
 .project-title {
   padding: 2%;
+  color: rgba(244, 32, 105, 1);
+  text-decoration: none !important;
+}
+
+.project-title:hover {
+  color: #5e5e5c;
+  text-decoration: none !important;
 }
 
 .project-desc {
@@ -148,11 +172,21 @@ img.icon {
 /*******************CONTACT-ME*******************/
 
 .contact-me {
-  background-color: #999894;
+  background-image: url("grass.png");
   display: flex;
   justify-content: center;
   color: #000;
   display: flex;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .contact-me {
+    background-attachment: scroll;
+  }
 }
 
 .contacts {
@@ -161,6 +195,15 @@ img.icon {
 
 .contact-me {
   padding-left: 20%;
+}
+
+.contact-icons {
+  padding: 0% 4%;
+  display: flex;
+}
+
+.each-contact {
+  flex: 1;
 }
 
 /**************MEDIA QUERIES******************/
@@ -183,7 +226,7 @@ img.icon {
   }
 
   .MoodLamp {
-    background-color: rgba(244, 32, 105, 0.7);
+    background-color: rgba(186, 218, 85, 0.7);
   }
 
   .row {
