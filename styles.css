@@ -90,12 +90,12 @@
 
 .project-title {
   padding: 2%;
-  color: rgba(244, 32, 105, 1);
+  color: #5e5e5c;
   text-decoration: none !important;
 }
 
 .project-title:hover {
-  color: #5e5e5c;
+  color: rgba(244, 32, 105, 1);
   text-decoration: none !important;
 }
 
