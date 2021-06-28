@@ -105,18 +105,18 @@ img.icon {
   line-height: 130%;
 }
 
-.DinoGame {
+.XcapeGame {
   flex: 1;
 }
 
 .PDFtoADB {
   background-color: #bada55;
-  flex: 1.2;
+  flex: 1;
 }
 
-.Front-end {
+.MoodLamp {
   background-color: #bada55;
-  flex: 1;
+  flex: 1.2;
 }
 
 /*******************SKILLS******************/
