@@ -145,6 +145,24 @@ img.icon {
   display: block;
 }
 
+/*******************CONTACT-ME*******************/
+
+.contact-me {
+  background-color: #999894;
+  display: flex;
+  justify-content: center;
+  color: #000;
+  display: flex;
+}
+
+.contacts {
+  padding: 2%;
+}
+
+.contact-me {
+  padding-left: 20%;
+}
+
 /**************MEDIA QUERIES******************/
 
 @media screen and (max-width: 1400px) {
