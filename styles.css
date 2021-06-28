@@ -98,7 +98,7 @@ img.icon {
 }
 
 .HomeAuto {
-  flex: 1.2;
+  flex: 1;
 }
 
 .HomeAuto.project-desc {
@@ -116,7 +116,7 @@ img.icon {
 
 .MoodLamp {
   background-color: #bada55;
-  flex: 1.2;
+  flex: 1;
 }
 
 /*******************SKILLS******************/
