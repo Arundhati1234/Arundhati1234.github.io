@@ -123,8 +123,8 @@ img.icon {
 
 .skills-row {
   display: flex;
-  margin-left: 25%;
   justify-content: center;
+  margin: 0% 0% 7% 25%;
 }
 
 .skills-column {
@@ -156,7 +156,7 @@ img.icon {
     padding: 0%;
   }
 
-  .DinoGame {
+  .XcapeGame {
     background: rgba(186, 218, 85, 0.7);
   }
 
@@ -164,7 +164,7 @@ img.icon {
     background-color: #fff;
   }
 
-  .Front-end {
+  .MoodLamp {
     background-color: rgba(244, 32, 105, 0.7);
   }
 
