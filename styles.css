@@ -159,14 +159,8 @@ img.icon {
   font-size: 25px;
 }
 
-.h {
-  font-size: 14px;
-  color: #f42069;
-  display: none;
-}
-
-.skill-item:hover + .h {
-  display: block;
+.skill-item {
+  cursor: pointer;
 }
 
 /*******************CONTACT-ME*******************/
